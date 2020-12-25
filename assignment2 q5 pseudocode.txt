@@ -1,0 +1,24 @@
+        Dim vowelcount, c, N  : Integer
+        Dim mystr1, mystr2  : String
+        Dim mychar  : Char
+        mychar   ← ""
+        N   ← 0
+
+        c   ← 0
+        vowelcount   ← 0
+        mystr1   ← "AEIOU"
+        mystr2   ← ""
+        INPUT("please enter string: "),mystr2
+        For c   ← 1 To Len(mystr2)
+
+            mychar   ← Mid(mystr2, c, 1)
+            mychar   ← UC(mychar)
+            N   ← LOCATE(mystr1, mychar)
+            If N > 0 Then
+                vowelcount   ← vowelcount + 1
+
+
+            End If
+        Next
+
+        OUTPUT("total vowels in entered string are:" & vowelcount)
