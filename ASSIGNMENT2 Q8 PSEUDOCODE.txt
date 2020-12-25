@@ -1,0 +1,24 @@
+        Dim mychar1, mychar2, B  : Char
+        Dim i  : Integer
+        Dim mystr1, MYSTR2  : String
+        mystr1  ← ""
+        MYSTR2  ← ""
+        B  ← ""
+        mychar2  ← '*'
+        i  ← 0
+        mychar1  ← ''
+         INPUT("Please enter string: "),mystr1 
+
+        mychar1  ← Left(mystr1, 1)
+
+        For i  ← 2 To Len(mystr1)
+            B  ← Mid(mystr1, i, 1)
+            If mychar1  ← B Then
+                MYSTR2  ← MYSTR2 & mychar2
+            Else
+                MYSTR2  ← MYSTR2 & B
+
+
+            End If
+        Next
+         OUTPUT("your result is: " & mychar1 & MYSTR2)
