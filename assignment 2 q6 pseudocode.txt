@@ -1,0 +1,13 @@
+        DECLARE count  : Integer
+        DECLARE mystr  : String
+        mystr  ← "many"
+        count  ← 0
+        INPUT("Ple ←e enter number of donuts ← ")
+        count  ← Console.ReadLine
+        If count < 10 Then
+            count  ← count
+            OUTPUT("Number of donuts ← " & count)
+        Else
+            OUTPUT("Number of donuts ← " & mystr)
+
+        End If
