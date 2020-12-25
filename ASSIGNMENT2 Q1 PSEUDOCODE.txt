@@ -1,0 +1,25 @@
+   Dim a  : Integer
+        Dim c  : Integer
+        Dim mystr1, mystr2  : String
+        Dim mychar  : CHARACTER
+        Dim allalphabets  : Boolean
+        allalphabets   ← True
+        a   ← 0
+        c   ← 0
+        mystr1   ← "abcdefghijklmnopqrstuvwxyz"
+        mystr2   ← ""
+        mychar   ← ""
+        INPUT("please enter string: "), mystr2
+        For c   ← 1 To Len(mystr1)
+            mychar   ← Mid(mystr1, c, 1)
+            a   ← LOCATE(mystr2, mychar)
+            If a   ← 0 Then
+                allalphabets   ← False
+            End If
+        Next
+        If allalphabets   ← True Then
+            OUTPUT("all alphabets are present")
+        Else
+
+            OUTPUT("all alphabets are not present")
+        End If
