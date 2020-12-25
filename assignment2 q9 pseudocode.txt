@@ -1,0 +1,20 @@
+DECLARE mystr1, mystr2, mystr3, mystr4, a, b : String
+        DECLARE c, d : Integer
+        d  ← 0
+        mystr1  ← ""
+        mystr2  ← ""
+        mystr3  ← ""
+        mystr4  ← ""
+        a  ← ""
+        b  ← ""
+        c  ← 0
+        INPUT("please enter string: "), a
+        INPUT("please enter string2: "),b
+        mystr1  ← Left(a, 2)
+        mystr2  ← Left(b, 2)
+        c  ← Len(a)
+        d  ← Len(b)
+        mystr3  ← Mid(a, 3, c)
+
+        mystr4  ← Mid(b, 3, d)
+        OUTPUT("result is: " & mystr2 & mystr3 & " " & mystr1 & mystr4)
