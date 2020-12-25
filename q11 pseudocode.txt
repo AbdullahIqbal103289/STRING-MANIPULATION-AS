@@ -1,0 +1,24 @@
+DECLARE mystr1, mystr2, mystr5 : String
+       DECLARE a, b, c : Integer
+
+        a ← 0
+        b ← 0
+        c ← 0
+
+        mystr1 ← ""
+        mystr2 ← ""
+        mystr5 ← ""
+
+        INPUT("Please enter string: "), mystr1
+        
+        a ← InStr(mystr1, "not")
+        b ← InStr(mystr1, "bad")
+        c ← Len(mystr1)
+        
+
+        If b > a Then
+            mystr2 ← Mid(mystr1, 1, a - 1)
+            mystr5 ← Mid(mystr1, b + 3, c)
+
+        End If
+        OUTPUT(mystr2 & " " & "good" & " " & mystr5)
