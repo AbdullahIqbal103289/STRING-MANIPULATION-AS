@@ -1,0 +1,28 @@
+      DECLARE mystr1, mystr2, B, mystr3 : String
+        DECLARE mychar1 : Char
+        DECLARE i, a : Integer
+        B = ""
+        a = 0
+        mystr3 = "ly"
+        mystr1 = ""
+        mychar1 = ''
+        mystr2 = "ing"
+        i = 0
+        OUTPUT("Please enter string: ")
+        INPUT mystr1
+        a = Len(mystr1)
+        B = Right(mystr1, 3)
+
+        If a >= 3 And B <> mystr2 Then
+            OUTPUT("result is: " + mystr1 + mystr2)
+            
+
+        ElseIf a >= 3 And B = mystr2 Then
+            OUTPUT("result is: " + mystr1 + mystr3)
+
+        Else
+            mystr1 = mystr1
+
+            OUTPUT("result is:" + mystr1)
+            
+        End If
