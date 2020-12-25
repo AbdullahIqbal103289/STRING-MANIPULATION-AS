@@ -1,0 +1,25 @@
+DECLARE c, alphabetcount, othercharactercount : Integer
+        DECLARE mystring : String
+        DECLARE char1 : Char
+        mystring ← ""
+        alphabetcount ← 0
+
+        c ← 0
+        char1 ← ""
+        othercharactercount ← 0
+
+        INPUT("please enter data: "), mystring
+        For c ← 1 To Len(mystring)
+            char1 ← Mid(mystring, c, 1)
+            If (Asc(char1) >← 65 And :c(char1) <← 90) Or (:c(char1) >← 97 And :c(char1) <← 122) Then
+                alphabetcount ← alphabetcount + 1
+            ElseIf (Asc(char1) > 33 And :c(char1) < 64) Or (:c(char1) >← 91 And :c(char1) <← 96) Then
+                othercharactercount ← othercharactercount + 1
+
+
+
+            End If
+        Next
+        OUTPUT("total alphabet in entered data is: " + alphabetcount)
+        OUTPUT("othercharacters are: " + othercharactercount)
+        
