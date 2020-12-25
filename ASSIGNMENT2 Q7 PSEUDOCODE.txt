@@ -1,0 +1,25 @@
+DECLARE S : String
+        DECLARE mystr, D, F : String
+        DECLARE mychar1 : CHARACTER
+        DECLARE mychar2 : CHARACTER
+        DECLARE c, B : Integer
+        B ← 0
+        D ← ""
+        c ← 0
+        F ← ""
+        S ← ""
+        mychar1 ← ''
+        mychar2 ← ''
+        S ← ""
+        mystr ← ""
+        INPUT("PLEASE ENTER S: ")
+        B ← Len(S)
+        D ← Left(S, 2)
+        F ← Right(S, 2)
+        If Len(S) > 2 Then
+            OUTPUT("your result is: " + D + F)
+            
+        Else
+            S ← S
+            OUTPUT("your result is: " + S)
+        ENDIF
