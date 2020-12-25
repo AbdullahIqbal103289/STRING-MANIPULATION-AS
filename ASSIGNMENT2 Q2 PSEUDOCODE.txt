@@ -1,0 +1,23 @@
+DECLARE mychar1, mychar2, mychar3 : Character
+        DECLARE mystr1, mystr2 : String
+        DECLARE c : Integer
+        mychar1 ← ""
+        mychar2 ← ""
+        mychar3 ← ""
+        mystr1 ← ""
+        mystr2 ← ""
+        c ← 0
+        INPUT("PLEASE ENTER STRING: "),mystr1
+        Console.Write("PLEASE ENTER CHARACTER TO REPLACE: "), mychar1
+        INPUT("PLEASE ENTER SUBSTITUTION CHARACTER: "), mychar2
+        For c ← 1 To Len(mystr1)
+            mychar3 ← Mid(mystr1, c, 1)
+            If mychar3 ← mychar1 Then
+                mystr2 ← mystr2 & mychar2
+            Else
+                mystr2 ← mystr2 & mychar3
+
+
+            End If
+        Next
+        OUTPUT("resulting string is: " & mystr2)
